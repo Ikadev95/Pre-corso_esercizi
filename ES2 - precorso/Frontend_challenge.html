@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form registrazione</title>
+</head>
+<body>
+
+    <div class="main">
+
+        <h1>Registrazione</h1>
+
+        <h2>Informazioni personali</h2>
+        <form onsubmit="alert ('registrazione inviata')">
+
+            <div class="info">
+                <label>Nome:</label> <br>
+                <input type="text" placeholder="Nome" class="text" required> 
+            </div>
+
+            <div class="info">
+                <label>Cognome:</label> <br>
+                <input type="text" placeholder="Cognome" class="text">
+            </div>
+
+            <div class="info">
+                <label>E-mail:</label> <br>
+                <input type="email" placeholder="e-mail" class="text">
+            </div>
+
+            <div class="info">
+                <label>Password:</label> <br>
+                <input type="password" placeholder="password" class="text">
+            </div>
+
+            <div class="info">
+                <label>Data di nascita:</label> <br>
+                <input type="date" class="text">
+            </div>
+
+            <div class="info">
+                <label>Numero di telefono:</label> <br>
+                <input type="number" class="text">
+            </div>
+    </div> 
+
+    <div class="main">
+            <h2>Preferenze</h2>
+
+                <p>Seleziona i tuoi generi musicali preferiti:</p>
+
+                <div class="pref">
+                    <input type="checkbox" name="genere">
+                    <label>Rock</label>
+                </div>
+            
+                <div class="pref">
+                    <input type="checkbox" name="genere">
+                    <label>Pop</label>
+                </div>
+
+                <div class="pref">
+                    <input type="checkbox" name="genere">
+                    <label>Jazz</label>
+                </div>
+            
+
+                <div class="pref">
+                    <input type="checkbox" name="genere">
+                    <label>Blues</label> 
+                </div>
+
+                <div class="pref">
+                    <input type="checkbox" name="genere">
+                    <label>Rap</label> 
+                </div>
+
+                <div class="pref">
+                    <input type="checkbox" name="genere">
+                    <label>Country</label> 
+                </div>
+
+    </div>
+
+    <div class="main">
+            <div class="condizioni">
+                <input type="radio" name="condizioni" required ="required">
+                <label>Accetta tutti i termini e le condizioni</label>
+    </div>
+
+            <button type="submit">Invia Registrazione</button>
+        
+    </div> 
+            
+    </form>
+</body>
+
+<style>
+
+form{
+        display: flex;
+        width: 400px;
+        flex-wrap: wrap;
+
+    }
+
+    .main{
+        width: 500px;
+        margin: 30px auto;
+        padding: 32px 32px;
+        border-radius: 30px;
+        box-shadow: 20px;
+        -webkit-box-shadow: 3px 5px 15px 0px #D1D1D1; 
+        box-shadow: 3px 5px 15px 0px #D1D1D1;
+    }
+
+    .text{
+        padding: 10px 10px;
+        border: solid 1px gainsboro;
+        border-radius: 5%;
+        width: 200px;
+        margin: 5px 0;
+    }
+
+    .pref{
+        width: 100%;
+        padding: 3px 0;
+    }
+
+    .condizioni{
+        width: 100%;
+    }
+
+    button{
+        margin-top: 10px;
+        padding: 10px 12px;
+        border: none;
+        background-color:rgb(192, 255, 234);
+        border-radius: 6px;
+    }
+    .info{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    h2{
+        width: 100%;
+        margin-top: 5px;
+    }
+</style>
+</html>
